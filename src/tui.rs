@@ -1,5 +1,5 @@
-use crate::mail_app::{MailApp, MailId, Session, SessionId};
-use std::{io::Write, rc::Rc};
+use crate::mail_app::{MailApp, MailId, SessionId};
+use std::io::Write;
 
 fn read_line() -> String {
     std::io::stdout().flush().expect("couldn't flush stdout");

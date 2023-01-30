@@ -1,5 +1,4 @@
 use rand::Rng;
-use std::rc::Rc;
 
 fn generate_id() -> i32 {
     rand::thread_rng().gen()
