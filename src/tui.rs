@@ -225,7 +225,8 @@ impl Tui {
                         match read_line().as_str() {
                             "END" => break,
                             line => content.push_str(line),
-                        }
+                        };
+                        content.push('\n');
                     }
                     self.mail_app
                         .write_mail(session, reciever, subject, content)

@@ -83,7 +83,10 @@ pub struct MailInfo {
 impl MailApp {
     pub fn new() -> Self {
         Self {
-            users: Vec::new(),
+            users: vec![
+                User::new("user1".to_string(), "1234".to_string()),
+                User::new("user2".to_string(), "1234".to_string()),
+            ],
             sessions: Vec::new(),
             mails: Vec::new(),
         }
